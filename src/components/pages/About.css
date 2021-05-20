@@ -1,0 +1,122 @@
+.about-container {
+  padding: 5rem;
+  background-color: snow;
+}
+
+.header {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 0;
+  text-decoration: underline #f5576c;
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+}
+.para-first {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  color: #303030;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.buttons {
+  margin-top: 2%;
+  justify-content: center;
+  text-align: center;
+  margin-left: 0px;
+}
+
+.about_skills {
+  margin-top: 3%;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  text-decoration: underline#f5576c;
+}
+.skills_container {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.animone {
+  margin-left: 100px;
+  margin-top: -70px;
+  width: 20%;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.animone:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 5px -10px 0 #f7ce68, -5px 5px 0 #fbab7e, 5px 0 0 #e0c3fc;
+  }
+  49% {
+    text-shadow: 0 0 -5px #f7ce68, -10px 5px -10px #fbab7e, 5px 0 0 #e0c3fc;
+  }
+
+  50% {
+    text-shadow: 0 5px 0 #f7ce68, -15px 0 5px #fbab7e, 0 5px -10px #e0c3fc;
+  }
+
+  99% {
+    text-shadow: 5px 5px 0 #f7ce68, 0 5px #fbab7e, 10px 5px 0 #e0c3fc;
+  }
+
+  100% {
+    text-shadow: 5px -10px 0 #f7ce68, 5px 0 10px #fbab7e, 0 0 5px #e0c3fc;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .animone {
+    align-content: center;
+    margin-top: 15px;
+    margin-left: 0;
+    width: 45%;
+    align-items: center;
+  }
+  .skills_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container {
+    align-items: center;
+    height: min-content;
+  }
+  .header {
+    font-size: 4rem;
+    align-items: center;
+  }
+
+  .para-first {
+    font-size: 20px;
+    align-self: center;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .buttons {
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    margin-top: 10%;
+    font-size: 3.5rem;
+  }
+  .para-first {
+    padding: 0;
+    margin: 0;
+  }
+}

@@ -1,0 +1,85 @@
+.hero-container {
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.content-container{
+  display: flex;
+
+}
+
+.svg-container{
+  padding-top: 1.5%;
+  padding-left: 0%;
+  display: flex;
+  z-index: 50;
+  transform : scale(1);
+  transition: all 1s ease-in-out;
+}
+.svg-container:hover{
+  transform : scale(0.8);
+  transition: all 1s ease-in-out;
+  
+}
+
+
+.text-container{
+  width: 100%;
+}
+
+
+
+.text1{
+  margin-left: -40%;
+  padding-top: 30%;
+  width: auto;
+  height: auto;
+  background-color:white ;
+  font-family: "SF", sans-serif;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 65px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.text2{
+  padding-top: 3%;
+  margin-left: 0%;
+  width: auto;
+  height: auto;
+  background-color:white ;
+  font-family: "SF", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 65px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.text3{
+  padding-top: 7%;
+  margin-left: -40%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15rem;
+  line-height: 218px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  font-family: "Agreement";
+}
+.btns-hero{
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.btn2{
+  margin-top: 30px;
+}
