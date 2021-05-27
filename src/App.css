@@ -12,7 +12,14 @@
   font-family: "SF Thin";
   src: url(./components/fonts/SFThin.ttf);
 }
-
+@font-face {
+  font-family: "Sf Bold";
+  src: url(./components/fonts/SfBold.ttf);
+}
+@font-face {
+  font-family: "Sf Reg";
+  src: url(./components/fonts/SfReg.ttf);
+}
 @font-face {
   font-family: "Agreement";
   src: url(./components/fonts/Agreement.ttf);

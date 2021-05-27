@@ -1,4 +1,5 @@
 import React,  { useState, useEffect }  from 'react';
+import {Link} from 'react-scroll';
 import './Hero.css';
 import {Button} from '../Button.js';
 import heroSvg from '../images/hero.svg';
@@ -34,7 +35,7 @@ function Hero() {
             <div className='hero-container' id='home'>
                     <div className="content-container">
                             <div className="svg-container">
-                                <img  className="herosvg-image" alt="yatara"src={heroSvg} width={width*0.70}/>
+                                <img  className="herosvg-image" alt="yatara"src={heroSvg} width={width*0.7}/>
                             </div>
                             <div className="text-container">
                                     <h3 className="text1"> BRING YOUR IDEAS</h3>
@@ -42,20 +43,23 @@ function Hero() {
                                     <h1 className="text3">LIFE</h1>
 
                                     <div className="btns-hero">
-                                    <Button className="btn1"
-                                        buttonStyle='btn-primary' 
-                                        buttonSize = 'btn-medium'
-                                        buttonColor='dark'>
-                                            contact us
-                                    </Button>
-                                    
-
-                                    <Button className="btn2"
-                                        buttonStyle='btn-primary' 
-                                        buttonSize = 'btn-medium'
-                                        buttonColor='light'>
-                                            portfolio
-                                    </Button>
+                                      <Link to='contactus'  className='button-two' duration={800} smooth={true}>
+                                        <Button className="btn1"
+                                            buttonStyle='btn-primary' 
+                                            buttonSize = 'btn-medium'
+                                            buttonColor='dark'>
+                                                contact us
+                                        </Button>
+                                      </Link>
+                                      
+                                      <Link to='portfolio'  className='button-two' duration={800} smooth={true}>
+                                        <Button className="btn2"
+                                            buttonStyle='btn-primary' 
+                                            buttonSize = 'btn-medium'
+                                            buttonColor='light'>
+                                                portfolio
+                                        </Button>
+                                      </Link>
                                     </div>
                                 
                             </div>
