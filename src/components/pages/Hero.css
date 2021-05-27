@@ -18,7 +18,7 @@
   transition: all 1s ease-in-out;
 }
 .svg-container:hover{
-  transform : scale(0.8);
+  transform : scale(0.95);
   transition: all 1s ease-in-out;
   
 }
@@ -27,7 +27,6 @@
 .text-container{
   width: 100%;
 }
-
 
 
 .text1{
@@ -66,9 +65,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 15rem;
-  line-height: 218px;
-  /* identical to box height */
-
+  line-height: 218px; 
   display: flex;
   align-items: center;
   font-family: "Agreement";
