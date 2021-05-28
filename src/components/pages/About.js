@@ -45,7 +45,7 @@ function About() {
                     </h1>
 
                     <p1 className="about-content">
-                        At Yatara we don’t create a website, we do more than that. Our goal is to deliver the best image of your business to the web.  Our dev team ensures all desgins are user-friendly, elegant and align with client needs.
+                        At Yatara we don’t create a website, we do more than that. Our goal is to deliver the best image of your business to the web.  Our dev team ensures all designs are user-friendly, elegant and align with client needs.
                     </p1>
 
                     <h2 className="about-signature">

@@ -74,9 +74,7 @@ function Portfolio() {
                         <img  className="portfoliosvg-image" alt="yatara"src={Laptop4} width={width*0.3}/>
                       </a>
                     </Item>
-
-                </Carousel>
-                
+                </Carousel>             
                 <div className="btns-portfolio">
                     <Link to='portfolio'  className='button-two' duration={800} smooth={true}>
                       <Button className="btn2"
@@ -86,7 +84,6 @@ function Portfolio() {
                               contact us
                       </Button>
                     </Link>
-
                     <Link to='portfolio'  className='button-two' duration={800} smooth={true}>
                       <Button className="btn2"
                           buttonStyle='btn-primary' 
@@ -96,11 +93,6 @@ function Portfolio() {
                       </Button>
                     </Link>
                 </div>
-                
-
-                
-
-
            </div>     
         </>
     )
