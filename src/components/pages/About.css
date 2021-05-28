@@ -47,6 +47,15 @@
 
 .right{
   margin-top: 10vh;
-  
   right: 0;
+}
+
+.herosvg-image{
+  transform : scale(1);
+  transition: all 0.7s ease-in-out;
+}
+
+.herosvg-image:hover{
+  transform : scale(0.95);
+  transition: all 0.7s ease-in-out;
 }
