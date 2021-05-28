@@ -24,3 +24,7 @@
   font-family: "Agreement";
   src: url(./components/fonts/Agreement.ttf);
 }
+@font-face {
+  font-family: "Arty";
+  src: url(./components/fonts/Arty.otf);
+}

@@ -53,7 +53,7 @@ function Hero() {
                                       </Link>
                                       
                                       <Link to='portfolio'  className='button-two' duration={800} smooth={true}>
-                                        <Button className="btn2"
+                                        <Button className="btn1"
                                             buttonStyle='btn-primary' 
                                             buttonSize = 'btn-medium'
                                             buttonColor='light'>

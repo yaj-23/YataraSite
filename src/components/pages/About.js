@@ -1,73 +1,75 @@
-import React, {useEffect, useRef}from 'react';
+import React ,  { useState, useEffect} from 'react';
 import {Link} from 'react-scroll';
 import './About.css';
-import lottie from 'lottie-web';
 import {Button} from '../Button.js';
+import aboutSvg from '../images/about.svg';
 
+
+function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+}
+
+function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+  
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+  
+    return windowDimensions;
+  }
 
 
 
 
 function About() {
 
-    const animone = useRef(null)
-
-
-    useEffect(() =>{
-        lottie.loadAnimation({
-            container : animone.current,
-            renderer:'svg',
-            loop: true,
-            autoplay: true,
-            animationData: require('../lottiefiles/about.json')
-        })
-    }, [] )
+    const {width } = useWindowDimensions();
 
     return (
         <>
             <div className="about-container" id='about'>
-                <h1 className='header'>
-                    About Me
-                </h1>
-                <div className='cont'>
-                    <p1 className="para-first">Hey everyone, I am Yajurva Trivedi, a Computer Engineering student in my second year at Ryerson University. 
-                    I am an aspiring software enthusiast and always a sucker getting exposed to new technologies.I enjoy cooking and making recipes by experimenting with cuisines from around the world. 
-                    For those who know me, I enjoy watching anime , and of course the NBA. I enjoy playing basketball, competing in fantasy leagues despite the questionable drafts and pickups.
+
+                <div className="left">
+                    <h1 className='about-header'>
+                        About us.
+                    </h1>
+
+                    <p1 className="about-content">
+                        At Yatara we don’t create a website, we do more than that. Our goal is to deliver the best image of your business to the web.  Our dev team ensures all desgins are user-friendly, elegant and align with client needs.
                     </p1>
 
-                    
-                </div>  
-                
-                <div className='buttons'>
-                    <Link to='contact'  className='button-about' duration={800} smooth={true}>           
-                        <Button buttonStyle='btn-primary' buttonColor='about' buttonSize='btn-medium'>
-                            Contact Me
+                    <h2 className="about-signature">
+                        Yajurva Trivedi
+                    </h2>
+
+                    <p1 className="about-titles">
+                        Founder & Developer at <b>YATARA DESIGNS    </b>
+                    </p1>
+
+                    <Link to='portfolio'  className='button-two' duration={800} smooth={true}>
+                        <Button className="btn2"
+                            buttonStyle='btn-primary' 
+                            buttonSize = 'btn-medium'
+                            buttonColor='light'>
+                                portfolio
                         </Button>
                     </Link>
+
                 </div>
-                
-                <h3 className="about_skills">Proficient In</h3>
 
-                <div className='skills_container'>
-                        <Button classname='but' buttonStyle='btn-primary' buttonColor='skill' buttonSize='btn-medium'>
-                            React / JS
-                        </Button>
+                <div className="right">
+                    <img  className="herosvg-image" alt="yatara"src={aboutSvg} width={width*0.4}/>
 
-                        <Button buttonStyle='btn-primary' buttonColor='skill' buttonSize='btn-medium'>
-                            Java
-                        </Button>
-
-                        <Button buttonStyle='btn-primary' buttonColor='skill' buttonSize='btn-medium'>
-                            Android Studio / XML
-                        </Button>
-
-                        <Button buttonStyle='btn-primary' buttonColor='skill' buttonSize='btn-medium'>
-                            Python
-                        </Button>
-
-                        <Button buttonStyle='btn-primary' buttonColor='skill' buttonSize='btn-medium'>
-                            C
-                        </Button>
                 </div>
                 
             

@@ -1,4 +1,5 @@
 .hero-container {
+  height: max-content;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -9,6 +10,7 @@
 }
 
 .svg-container{
+  padding-left: 2vw;
   width: 60%;
   display: flex;
   transform : scale(1);
