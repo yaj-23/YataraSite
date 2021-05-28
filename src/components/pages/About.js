@@ -26,7 +26,7 @@ function useWindowDimensions() {
     }, []);
   
     return windowDimensions;
-  }
+}
 
 
 

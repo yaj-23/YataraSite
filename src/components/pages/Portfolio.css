@@ -1,0 +1,51 @@
+.portfolio-container{
+    display:flex;
+    flex-direction: column;
+    height:90vh;
+}
+
+.portfolio-header{
+  padding-top: 10vh;
+  height: min-content;
+  justify-content: center;
+  font-weight: normal;
+  font-size: 12rem;
+  font-family: "Agreement";
+  margin-left: 10vw;
+}
+
+.portfolio-content{
+  justify-content: center;
+  font-family: "SF Thin", sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;  
+  color: #000000;
+  margin-left: 10vw;
+  margin-top: -5vh;
+}
+
+.portfoliosvg-image{
+    transform : scale(0.7);
+    transition: all 0.7s ease-in-out;
+  }
+  
+  .portfoliosvg-image:hover{
+    transform : scale(0.8);
+    transition: all 0.7s ease-in-out;
+  }
+
+  .carousel-portfolio{
+      padding-top: 5vh;
+
+  }
+
+  .btns-portfolio{
+    margin-top: -5vh;
+    margin-left: 10vw;  
+    display: flex;
+    flex-direction: row;
+  }
+
+  .button-two{
+      margin-right: 2vw;
+  }
