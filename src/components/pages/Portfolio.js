@@ -44,7 +44,7 @@ function Portfolio() {
     const {width } = useWindowDimensions();
     return (
         <>
-           <div classId='portfolio'className="portfolio-container">
+           <div id='portfolio'className="portfolio-container">
                 <h1 className='portfolio-header'>
                     Portfolio.
                 </h1>
