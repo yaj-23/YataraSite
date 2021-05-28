@@ -53,7 +53,7 @@ function Portfolio() {
                     click on screen to visit site.
                 </p1>
 
-                <Carousel className="carousel-portfolio" breakPoints={breakPoints} enableSwipe={true} enableTilt={true}  showArrows={false}>
+                <Carousel className="carousel-portfolio" breakPoints={breakPoints}   showArrows={false}>
                     <Item>
                       <a href="https://dpfinancial.ca/">
                         <img  className="portfoliosvg-image" alt="yatara"src={Laptop1} width={width*0.3}/>
