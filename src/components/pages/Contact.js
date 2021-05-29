@@ -43,12 +43,16 @@ function Contact() {
                         <p1 className='contact-desc'>email us directly at:</p1>
                         <p1 className='contact-email'>yataradesigns@gmail.com</p1>
                         <div className='email-btn'>
-                            <Button className="email-btn"
-                                buttonStyle='btn-primary' 
-                                buttonSize = 'btn-medium'
-                                buttonColor='light'>
-                                    email here
-                            </Button>
+
+                            <a href='mailto: yataradesigns@gmail.com'>
+                                <Button className="email-btn"
+                                    buttonStyle='btn-primary' 
+                                    buttonSize = 'btn-medium'
+                                    buttonColor='light'>
+                                        email here
+                                </Button>
+                            </a>
+                            
                         </div>
                         
                     </div>
