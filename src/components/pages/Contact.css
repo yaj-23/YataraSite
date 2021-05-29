@@ -1,2 +1,105 @@
 .contact-container {
+  display:flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 10vh;
+}
+
+.top{
+  display: flex;
+  flex-direction: row;
+}
+.contact-left{
+  z-index: 10;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-right{
+  z-index: 1;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: -10vw;
+}
+
+.contact-header{
+  padding-top: 10vh;
+  height: min-content;
+  justify-content: center;
+  font-weight: normal;
+  font-size: 12rem;
+  font-family: "Agreement";
+  margin-left: 10vw;
+}
+.contact-desc{
+  margin-top: -5vh;
+  margin-left: 10vw;
+  justify-content: center;
+  font-family: "SF Thin", sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;  
+}
+
+.contact-email{
+  margin-left: 10vw;
+  justify-content: center;
+  font-family: "Sf Bold", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;  
+}
+
+.email-btn{
+  width:150px;
+  margin-left: 10vw;
+  margin-top: 2vh;
+}
+
+.bottom{
+  margin-top: -20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.member{
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+  
+}
+
+.member-name{
+  margin-left: 10vw;
+  justify-content: center;
+  font-family: "SF Thin", sans-serif;
+  font-weight: 100;
+  font-size: 3rem;  
+  text-align: center;
+}
+.member-position{
+  padding-top: 2vh;
+  text-align: center;
+  margin-left: 10vw;
+  justify-content: center;
+  font-family: "SF Thin", sans-serif;
+  font-size: 1.5rem;  
+}
+
+.member-linkedin{
+  width: 25px;
+  margin-left: 10vw;
+  padding-top: 2vh;
+  transform : scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.member-linkedin:hover{
+  transform : scale(1.2);
+  transition: all 0.3s ease-in-out;
 }

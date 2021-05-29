@@ -1,7 +1,8 @@
 .portfolio-container{
     display:flex;
     flex-direction: column;
-    height:90vh;
+    padding-bottom: 10vh;
+
 }
 
 .portfolio-header{

@@ -70,20 +70,20 @@ export default function Navbar() {
 
                     <li className='nav-social-item'>
                         <a href="https://www.linkedin.com/company/yatara-designs/">
-                            <img src={facebook} alt=""/>    
+                            <img src={facebook} alt="yatara"/>    
                         </a>
                         
                     </li>
 
                     <li className='nav-social-item'>
                         <a href="https://www.linkedin.com/company/yatara-designs/">
-                            <img src={instagram} alt=""/>
+                            <img src={instagram} alt="yatara"/>
                         </a>
                         
                     </li>
                     <li className='nav-social-item'>
                         <a href="https://www.linkedin.com/company/yatara-designs/">
-                            <img src={linkedin} alt=""/>
+                            <img src={linkedin} alt="yatara"/>
                         </a>
                         
                     </li>
