@@ -1,0 +1,50 @@
+.footer{
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-left{
+    margin-left: 5vw;
+    padding-top: 5vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-desc{
+    font-family: "SF Thin", sans-serif;
+    font-weight: 100;
+    font-size: 1.3rem;  
+    color: #fff;   
+}
+
+.footer-columns{   
+    margin: 10px 20px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.column-header{
+    font-family: "Sf Bold", sans-serif;
+    font-size: 2rem;  
+    color: #fff;   
+}
+
+.links{
+    cursor: pointer;
+    font-family: "SF Thin", sans-serif;
+    font-size: 1rem;  
+    color: #fff;   
+    font-weight: 100;
+    transform: scale(0.5);
+    transition: all 0.5s ease;
+
+}
+.links:hover{
+    color: grey;
+}
