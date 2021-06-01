@@ -58,47 +58,15 @@ function Contact() {
                     </div>
 
                     <div className='contact-right'> 
-                         <img  className="herosvg-image" alt="yatara"src={contact} width={width*0.6}/>
+                         <img  className="herosvg-image" alt="yatara"src={contact} width={width*0.25}/>
 
                     </div>
 
                 </div>
 
 
-                <div className='bottom'>
-                    <div className='team-header'>
-                        <h2 className='contact-header'>Meet us.</h2>
-                    </div>
+                
 
-                    <div className='team-container'>
-                        <div className='member'>
-                            <p1 className='member-name'>Yajurva Trivedi</p1>
-                            <p1 className='member-position'>Founder/Developer</p1>
-                            <a href='https://www.linkedin.com/in/yajurva-trivedi/'>
-                                <img className='member-linkedin'src={linkedin} alt=""/>       
-                             </a>
-                            
-                        </div>
-                        <div className='member'>
-
-                            <p1 className='member-name'>Virag Mehta</p1>
-                            <p1 className='member-position'>Team Lead</p1>
-                            <a href='https://www.linkedin.com/in/virag-mehta/'>
-                                <img className='member-linkedin'src={linkedin} alt=""/>       
-                             </a>
-                            
-                        </div>
-                        <div className='member'>
-                            <p1 className='member-name'>Ashik Hussain</p1>
-                            <p1 className='member-position'>Accounts Manager</p1>
-                            <a href='https://www.linkedin.com/in/ashik-hussain-b7166b144/'>
-                                <img className='member-linkedin'src={linkedin} alt=""/>       
-                             </a>
-                            
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </>
     )
