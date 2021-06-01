@@ -79,14 +79,14 @@ function Footer() {
             <div className='footer-columns'>
                 <div className='column'>
                     <p1 className='column-header'>socials.</p1>
-                    <a href='https://www.linkedin.com/company/yatara-designs/'>
+                    <a href='https://www.facebook.com/Yatara-Design-102095748764219'>
                         <p1 className='links'>facebook</p1>
                     </a>
                     
                     <a href='https://www.linkedin.com/company/yatara-designs/'>
                         <p1 className='links'>linkedin</p1>
                     </a>
-                    <a href='https://www.linkedin.com/company/yatara-designs/'>
+                    <a href='https://www.instagram.com/yataradesigns/'>
                         <p1 className='links'>instagram</p1>
                     </a>
                   

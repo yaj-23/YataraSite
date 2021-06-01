@@ -69,14 +69,14 @@ export default function Navbar() {
                     </li>
 
                     <li className='nav-social-item'>
-                        <a href="https://www.linkedin.com/company/yatara-designs/">
+                        <a href="https://www.facebook.com/Yatara-Design-102095748764219">
                             <img src={facebook} alt="yatara"/>    
                         </a>
                         
                     </li>
 
                     <li className='nav-social-item'>
-                        <a href="https://www.linkedin.com/company/yatara-designs/">
+                        <a href="https://www.instagram.com/yataradesigns/">
                             <img src={instagram} alt="yatara"/>
                         </a>
                         
