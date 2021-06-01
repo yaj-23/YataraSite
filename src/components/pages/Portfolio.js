@@ -8,6 +8,7 @@ import Laptop1 from '../images/Laptop.svg';
 import Laptop2 from '../images/Laptop2.svg';
 import Laptop3 from '../images/Laptop3.svg';
 import Laptop4 from '../images/Laptop4.svg';
+import Laptop5 from '../images/Laptop5.svg';
 
 
 function getWindowDimensions() {
@@ -74,7 +75,14 @@ function Portfolio() {
                         <img  className="portfoliosvg-image" alt="yatara"src={Laptop4} width={width*0.3}/>
                       </a>
                     </Item>
-                </Carousel>             
+                    <Item>
+                      <a href="https://cashandcell.com/">
+                        <img  className="portfoliosvg-image" alt="yatara"src={Laptop5} width={width*0.3}/>
+                      </a>
+                    </Item>
+                </Carousel>        
+
+
                 <div className="btns-portfolio">
                     <Link to='portfolio'  className='button-two' duration={800} smooth={true}>
                       <Button className="btn2"
