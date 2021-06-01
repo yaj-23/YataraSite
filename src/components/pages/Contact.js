@@ -3,7 +3,6 @@ from 'react';
 import './Contact.css';
 import {Button} from '../Button.js';
 import contact from '../images/contact.svg';
-import linkedin from '../images/linkedin.svg';
 
 function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;
