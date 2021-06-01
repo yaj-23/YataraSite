@@ -17,9 +17,10 @@
 }
 .contact-right{
   z-index: 1;
-  width: 40%;
+  width: 30%;
   display: flex;
   flex-direction: column;
+  margin-left: 10vw;
 }
 
 .contact-header{

@@ -43,7 +43,7 @@ function Hero() {
                                     <h1 className="text3">LIFE</h1>
 
                                     <div className="btns-hero">
-                                      <Link to='contactus'  className='button-two' duration={800} smooth={true}>
+                                      <Link to='contact'  className='button-two' duration={800} smooth={true}>
                                         <Button className="btn1"
                                             buttonStyle='btn-primary' 
                                             buttonSize = 'btn-medium'
