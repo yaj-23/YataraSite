@@ -57,7 +57,7 @@ function Contact() {
                     </div>
 
                     <div className='contact-right'> 
-                         <img  className="herosvg-image" alt="yatara"src={contact} width={width*0.25}/>
+                         <img  className="herosvg-image" alt="yatara"src={contact} width={width*0.20}/>
 
                     </div>
 
