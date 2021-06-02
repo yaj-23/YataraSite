@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from 'react-scroll';
 import logo from '../images/yatara.svg';
 import menubar from '../images/bars.svg';
@@ -9,7 +9,28 @@ import linkedin from '../images/linkedin.svg';
 import "./Navbar.css";
 
 
+function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+}
 
+function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+  
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+  
+    return windowDimensions;
+}
 
 
 
@@ -18,7 +39,8 @@ export default function Navbar() {
     const [click, setClick] = useState(false); /* Menu Toggle for Mobile Function*/
     const handleClick = () => setClick(!click);
 
-    
+    const {width } = useWindowDimensions();
+
 
     
     return (
@@ -28,7 +50,7 @@ export default function Navbar() {
                 <div className="navbar-container container"> {/* This is the Navbar Component Divisions like Logo and Links*/}
                     
                     <Link to='home' className='navbar-logo' duration={800} smooth={true}>{/* This is the Logo Component, imports sourse from images*/}
-                        <img src={logo} alt=""/>
+                        <img className='logo'src={logo}  alt=""/>
                     </Link>
 
                     <div className='menu-icon' onClick ={handleClick}> {/* This checks if its clicked, if yea, change to closed, if not keep displaying bars*/}
