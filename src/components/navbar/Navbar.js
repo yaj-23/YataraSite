@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-scroll';
 import logo from '../images/yatara.svg';
 import menubar from '../images/bars.svg';
@@ -9,28 +9,6 @@ import linkedin from '../images/linkedin.svg';
 import "./Navbar.css";
 
 
-function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height
-    };
-}
-
-function useWindowDimensions() {
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-  
-    useEffect(() => {
-      function handleResize() {
-        setWindowDimensions(getWindowDimensions());
-      }
-  
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
-    }, []);
-  
-    return windowDimensions;
-}
 
 
 
@@ -39,7 +17,6 @@ export default function Navbar() {
     const [click, setClick] = useState(false); /* Menu Toggle for Mobile Function*/
     const handleClick = () => setClick(!click);
 
-    const {width } = useWindowDimensions();
 
 
     
