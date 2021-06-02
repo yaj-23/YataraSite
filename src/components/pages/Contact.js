@@ -36,32 +36,32 @@ function Contact() {
     return (
         <>
             <div className='contact-container' id='contact'>
-                <div className='top'>
-                    <div className='contact-left'>
-                        <h2 className='contact-header'>Contact us.</h2>
-                        <p1 className='contact-desc'>email us directly at:</p1>
-                        <p1 className='contact-email'>yataradesigns@gmail.com</p1>
-                        <div className='email-btn'>
+                
+                <div className='contact-left'>
+                    <h2 className='contact-header'>Contact us.</h2>
+                    <p1 className='contact-desc'>email us directly at:</p1>
+                    <p1 className='contact-email'>yataradesigns@gmail.com</p1>
+                    <div className='email-btn'>
 
-                            <a href='mailto: yataradesigns@gmail.com'>
-                                <Button className="email-btn"
-                                    buttonStyle='btn-primary' 
-                                    buttonSize = 'btn-medium'
-                                    buttonColor='light'>
-                                        email here
-                                </Button>
-                            </a>
-                            
-                        </div>
+                        <a href='mailto: yataradesigns@gmail.com'>
+                            <Button className="email-btn"
+                                buttonStyle='btn-primary' 
+                                buttonSize = 'btn-medium'
+                                buttonColor='light'>
+                                    email here
+                            </Button>
+                        </a>
                         
                     </div>
+                    
+                </div>
 
-                    <div className='contact-right'> 
-                         <img  className="herosvg-image" alt="yatara"src={contact} width={width*0.20}/>
-
-                    </div>
+                <div className='contact-right'> 
+                        <img  className="herosvg-image" alt="yatara"src={contact} width={width*0.20}/>
 
                 </div>
+
+                
 
 
                 

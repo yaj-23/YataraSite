@@ -1,14 +1,11 @@
 .contact-container {
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   overflow: hidden;
   padding-bottom: 10vh;
 }
 
-.top{
-  display: flex;
-  flex-direction: row;
-}
+
 .contact-left{
   z-index: 10;
   width: 70%;
@@ -55,51 +52,39 @@
   margin-top: 2vh;
 }
 
-.bottom{
-  margin-top: -20vh;
-  display: flex;
-  flex-direction: column;
-}
 
-.team-container{
-  display: flex;
-  flex-direction: row;
-}
-
-.member{
-  display: flex;
-  flex-direction: column;
-  align-items:  center;
+@media screen and (max-width:960px) {
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+    position: center;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+  .contact-left{
+    position: center;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+  .contact-header{
+    font-size: 6.5rem;
+    width: 100%;
+    margin: auto;
+  }
+  .contact-desc{
+      font-size: 1.5rem;
+      width: 100%;
+      margin: auto;
+  }
+  .email-btn{
+    padding-top: 10px;
+    width: 100%;
+    margin: auto;
+  }
+  .contact-right{
+    display: none;
+  }
   
-}
-
-.member-name{
-  margin-left: 10vw;
-  justify-content: center;
-  font-family: "SF Thin", sans-serif;
-  font-weight: 100;
-  font-size: 3rem;  
-  text-align: center;
-}
-.member-position{
-  padding-top: 2vh;
-  text-align: center;
-  margin-left: 10vw;
-  justify-content: center;
-  font-family: "SF Thin", sans-serif;
-  font-size: 1.5rem;  
-}
-
-.member-linkedin{
-  width: 25px;
-  margin-left: 10vw;
-  padding-top: 2vh;
-  transform : scale(1);
-  transition: all 0.3s ease-in-out;
-}
-
-
-.member-linkedin:hover{
-  transform : scale(1.2);
-  transition: all 0.3s ease-in-out;
 }
