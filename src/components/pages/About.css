@@ -1,6 +1,8 @@
 .about-container {
   display: flex;
   flex-direction: row;
+  overflow: hidden;
+
 }
 
 .left{
@@ -58,4 +60,9 @@
 .herosvg-image:hover{
   transform : scale(0.95);
   transition: all 0.7s ease-in-out;
+}
+
+
+@media screen and (max-width: 960px) {
+
 }

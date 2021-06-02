@@ -35,7 +35,7 @@ function Hero() {
             <div className='hero-container' id='home'>
                     <div className="content-container">
                             <div className="svg-container">
-                                <img  className="herosvg-image" alt="yatara"src={heroSvg} width={width*0.7}/>
+                                <img  className="herosvg-image" alt="yatara"src={heroSvg} width={width*0.65}/>
                             </div>
                             <div className="text-container">
                                     <h3 className="text1"> BRING YOUR IDEAS</h3>
