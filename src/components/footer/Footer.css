@@ -50,3 +50,25 @@
 .links:hover{
     color: grey;
 }
+
+@media screen and (max-width:960px) {
+
+    .footer-left{
+        padding-top: 0;
+    }
+    .footer-logo{
+        padding-top: 20px;
+        transform: scale(1);
+    }
+
+    .footer-desc{
+        font-size: 0.7rem;
+        padding-top: 10px ;
+    }
+    .column-header{
+        font-size: 0.8rem;
+    }
+    .links{
+        font-size: 0.5rem;
+    }
+}
