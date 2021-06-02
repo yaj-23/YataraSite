@@ -52,3 +52,40 @@
   .button-two{
       margin-right: 2vw;
   }
+
+  @media screen and (max-width: 960px) {
+    .portfolio-container{
+      display: flex;
+      flex-direction: column;
+      position: center;
+      text-align: center;
+      margin: auto;
+      width: 100%;
+    }
+
+    .portfolio-header{
+      font-size: 7.5rem;
+      width: 100%;
+      margin: auto;
+    }
+    .portfolio-content{
+      font-size: 1.5rem;
+      width: 90%;
+      margin: auto;
+    }
+
+    .portfoliosvg-image{
+      transform : scale(2.5);
+      margin: auto;
+
+    }
+    .portfoliosvg-image:hover{
+      transform : scale(2.5);
+
+    }
+
+    .btns-portfolio{
+      margin: auto;
+
+    }
+  }
